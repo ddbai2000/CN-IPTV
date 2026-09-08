@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CN-IPTV - 直播源</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #1a1a2e; color: #eee; min-height: 100vh; }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        h1 { text-align: center; color: #00d9ff; margin-bottom: 30px; }
+        .card { background: #16213e; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+        .card h2 { color: #00d9ff; margin-bottom: 15px; font-size: 18px; }
+        .links a { display: block; padding: 12px 15px; margin: 8px 0; background: #0f3460; color: #eee; text-decoration: none; border-radius: 8px; transition: background 0.2s; }
+        .links a:hover { background: #1a5490; }
+        .info { text-align: center; color: #888; margin-top: 30px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📺 CN-IPTV 直播源</h1>
+        
+        <div class="card">
+            <h2>M3U 播放列表</h2>
+            <div class="links">
+                <a href="all.m3u">📡 全部频道 (all.m3u)</a>
+                <a href="cn.m3u">🇨🇳 国内频道 (cn.m3u)</a>
+                <a href="hotel_tvn.m3u">🏨 酒店电视 (hotel_tvn.m3u)</a>
+                <a href="youhun.m3u">💎 优汇源 (youhun.m3u)</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>TXT 格式</h2>
+            <div class="links">
+                <a href="txt/all.txt">📡 全部频道 (all.txt)</a>
+                <a href="txt/cn.txt">🇨🇳 国内频道 (cn.txt)</a>
+                <a href="txt/hotel_tvn.txt">🏨 酒店电视 (hotel_tvn.txt)</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>EPG 节目指南</h2>
+            <div class="links">
+                <a href="epg/51zmt.xml">51zmt EPG (XML)</a>
+                <a href="epg/pw-7/">EPG 每日数据</a>
+            </div>
+        </div>
+        
+        <div class="info">
+            <p>数据来源：yunnysunny/iptv-sources | 自动生成</p>
+            <p>GitHub: ddbai2000/CN-IPTV</p>
+        </div>
+    </div>
+</body>
+</html>
