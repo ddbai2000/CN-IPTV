@@ -1,35 +1,44 @@
-name: update script
+name: deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [24.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Use Node.js ${{ matrix.node-version }}
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 24.x
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
       - uses: pnpm/action-setup@v4
         with:
           version: 11
           run_install: false
+
       - name: Get pnpm store directory
         id: pnpm-store
         shell: bash
-        run: |
-            echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
-  
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
       - name: Setup pnpm cache
         uses: actions/cache@v3
         with:
@@ -37,23 +46,23 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
+
       - run: pnpm install
       - run: pnpm build
-      - run: pnpm build:static
+      - run: pnpm m3u
 
-      # - name: "Jekyll theme"
-      #   run: mv ./_config.temp.yml ./m3u/_config.yml
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./m3u
+          cname: aivps.cc.cd
 
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./m3u
-      #     enable_jekyll: true
-      #     cname: m3u.ibert.me
-
-      # - name: discord
-      #   uses: HerbertHe/discord-action@v1
-      #   with:
-      #     webhook: ${{ secrets.DISCORD_WEBHOOK }}
-      #     message: ${{ github.repository }} has been successfullly updated, see https://m3u.ibert.me to get more.
+      - name: Configure Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler@3
+          npx wrangler pages deploy m3u --project-name=cn-iptv --branch=main --no-bundle
