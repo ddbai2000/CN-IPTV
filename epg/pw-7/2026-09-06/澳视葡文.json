@@ -1,0 +1,195 @@
+{
+  "channel": "澳视葡文",
+  "epg_data": [
+    {
+      "start": "10:55",
+      "end": "12:15",
+      "title": "Missa Dominical (Directo)"
+    },
+    {
+      "start": "12:15",
+      "end": "13:00",
+      "title": "SOS Animal T2"
+    },
+    {
+      "start": "13:00",
+      "end": "13:30",
+      "title": "Encruzilhadas da Vida"
+    },
+    {
+      "start": "13:30",
+      "end": "14:30",
+      "title": "Telejornal RTPi (Diferido)"
+    },
+    {
+      "start": "14:30",
+      "end": "15:05",
+      "title": "A Grande Muralha Verde - Estreia"
+    },
+    {
+      "start": "15:05",
+      "end": "15:40",
+      "title": "China 360° (Repetição)"
+    },
+    {
+      "start": "15:40",
+      "end": "16:05",
+      "title": "Yoko"
+    },
+    {
+      "start": "16:05",
+      "end": "16:30",
+      "title": "Karmas World"
+    },
+    {
+      "start": "16:30",
+      "end": "16:50",
+      "title": "Carmen Sandiego T1"
+    },
+    {
+      "start": "16:50",
+      "end": "17:15",
+      "title": "Basketeers T1"
+    },
+    {
+      "start": "17:15",
+      "end": "17:45",
+      "title": "Ó Da Casa T2"
+    },
+    {
+      "start": "17:45",
+      "end": "18:15",
+      "title": "Passado em Foco: Um Dia na Vida de um Cesteiro"
+    },
+    {
+      "start": "18:15",
+      "end": "19:00",
+      "title": "Patrões Fora T1"
+    },
+    {
+      "start": "19:00",
+      "end": "20:00",
+      "title": "Ciência da Adrenalina"
+    },
+    {
+      "start": "20:00",
+      "end": "20:45",
+      "title": "Telejornal"
+    },
+    {
+      "start": "20:45",
+      "end": "21:40",
+      "title": "Portugal - Terra Selvagem No Limite"
+    },
+    {
+      "start": "21:40",
+      "end": "22:30",
+      "title": "Cavalos de Corrida"
+    },
+    {
+      "start": "22:30",
+      "end": "23:05",
+      "title": "TDM News"
+    },
+    {
+      "start": "23:05",
+      "end": "23:30",
+      "title": "Guest Star"
+    },
+    {
+      "start": "23:30",
+      "end": "08:00",
+      "title": "RTPi Directo"
+    },
+    {
+      "start": "13:20",
+      "end": "14:30",
+      "title": "Telejornal RTPi (Diferido)"
+    },
+    {
+      "start": "14:30",
+      "end": "14:50",
+      "title": "Superstore T5"
+    },
+    {
+      "start": "14:50",
+      "end": "15:35",
+      "title": "Queridos Papás"
+    },
+    {
+      "start": "15:35",
+      "end": "15:50",
+      "title": "O Carrinho Poli T2"
+    },
+    {
+      "start": "15:50",
+      "end": "16:15",
+      "title": "Adivinha o Quanto Eu Gosto de Ti T2"
+    },
+    {
+      "start": "16:15",
+      "end": "16:40",
+      "title": "Chovem Almôndegas T1"
+    },
+    {
+      "start": "16:40",
+      "end": "17:05",
+      "title": "Maya the Bee"
+    },
+    {
+      "start": "17:05",
+      "end": "17:55",
+      "title": "Renascer (Repetição)"
+    },
+    {
+      "start": "17:55",
+      "end": "18:20",
+      "title": "Personaliza a Tua Casa T2"
+    },
+    {
+      "start": "18:20",
+      "end": "19:05",
+      "title": "Parenthood - Uma História de Família T2"
+    },
+    {
+      "start": "19:05",
+      "end": "20:00",
+      "title": "A Fazenda"
+    },
+    {
+      "start": "20:00",
+      "end": "20:45",
+      "title": "Telejornal"
+    },
+    {
+      "start": "20:45",
+      "end": "21:30",
+      "title": "O Caminho Chinês para a Modernização - Fim"
+    },
+    {
+      "start": "21:30",
+      "end": "21:40",
+      "title": "Ao Km T1 - Fim"
+    },
+    {
+      "start": "21:40",
+      "end": "22:30",
+      "title": "Renascer"
+    },
+    {
+      "start": "22:30",
+      "end": "23:05",
+      "title": "TDM News"
+    },
+    {
+      "start": "23:05",
+      "end": "23:55",
+      "title": "Construção Extraordinária T2"
+    },
+    {
+      "start": "23:55",
+      "end": "08:00",
+      "title": "RTPi Directo"
+    }
+  ]
+}

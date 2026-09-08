@@ -1,0 +1,185 @@
+{
+  "channel": "澳视葡文",
+  "epg_data": [
+    {
+      "start": "13:20",
+      "end": "14:30",
+      "title": "Telejornal RTPi (Diferido)"
+    },
+    {
+      "start": "14:30",
+      "end": "15:20",
+      "title": "Safari Flix"
+    },
+    {
+      "start": "15:20",
+      "end": "15:45",
+      "title": "Bairro do Daniel Tigre"
+    },
+    {
+      "start": "15:45",
+      "end": "16:10",
+      "title": "A Carrinha Mágica T2"
+    },
+    {
+      "start": "16:10",
+      "end": "16:35",
+      "title": "Extreme Football T1"
+    },
+    {
+      "start": "16:35",
+      "end": "17:00",
+      "title": "Inspector Gadget"
+    },
+    {
+      "start": "17:00",
+      "end": "17:40",
+      "title": "Rensga Hits! - Fim"
+    },
+    {
+      "start": "17:40",
+      "end": "18:30",
+      "title": "Rebobinar Portugal"
+    },
+    {
+      "start": "18:30",
+      "end": "19:00",
+      "title": "O Programa dos Barcos"
+    },
+    {
+      "start": "19:00",
+      "end": "20:00",
+      "title": "Veterinário de Província T1"
+    },
+    {
+      "start": "20:00",
+      "end": "20:45",
+      "title": "Telejornal"
+    },
+    {
+      "start": "20:45",
+      "end": "21:35",
+      "title": "A Espia - Fim"
+    },
+    {
+      "start": "21:35",
+      "end": "22:00",
+      "title": "Volta ao Mundo em 80 Truques T1"
+    },
+    {
+      "start": "22:00",
+      "end": "22:30",
+      "title": "Humanos Extraordinários T2"
+    },
+    {
+      "start": "22:30",
+      "end": "23:05",
+      "title": "TDM News"
+    },
+    {
+      "start": "23:05",
+      "end": "08:00",
+      "title": "Um Verão Para Recordar"
+    },
+    {
+      "start": "10:55",
+      "end": "12:15",
+      "title": "Missa Dominical (Directo)"
+    },
+    {
+      "start": "12:15",
+      "end": "13:00",
+      "title": "SOS Animal T2"
+    },
+    {
+      "start": "13:00",
+      "end": "13:30",
+      "title": "Encruzilhadas da Vida"
+    },
+    {
+      "start": "13:30",
+      "end": "14:30",
+      "title": "Telejornal RTPi (Diferido)"
+    },
+    {
+      "start": "14:30",
+      "end": "15:05",
+      "title": "A Grande Muralha Verde - Estreia"
+    },
+    {
+      "start": "15:05",
+      "end": "15:40",
+      "title": "China 360° (Repetição)"
+    },
+    {
+      "start": "15:40",
+      "end": "16:05",
+      "title": "Yoko"
+    },
+    {
+      "start": "16:05",
+      "end": "16:30",
+      "title": "Karmas World"
+    },
+    {
+      "start": "16:30",
+      "end": "16:50",
+      "title": "Carmen Sandiego T1"
+    },
+    {
+      "start": "16:50",
+      "end": "17:15",
+      "title": "Basketeers T1"
+    },
+    {
+      "start": "17:15",
+      "end": "17:45",
+      "title": "Ó Da Casa T2"
+    },
+    {
+      "start": "17:45",
+      "end": "18:15",
+      "title": "Passado em Foco: Um Dia na Vida de um Cesteiro"
+    },
+    {
+      "start": "18:15",
+      "end": "19:00",
+      "title": "Patrões Fora T1"
+    },
+    {
+      "start": "19:00",
+      "end": "20:00",
+      "title": "Ciência da Adrenalina"
+    },
+    {
+      "start": "20:00",
+      "end": "20:45",
+      "title": "Telejornal"
+    },
+    {
+      "start": "20:45",
+      "end": "21:40",
+      "title": "Portugal - Terra Selvagem No Limite"
+    },
+    {
+      "start": "21:40",
+      "end": "22:30",
+      "title": "Cavalos de Corrida"
+    },
+    {
+      "start": "22:30",
+      "end": "23:05",
+      "title": "TDM News"
+    },
+    {
+      "start": "23:05",
+      "end": "23:30",
+      "title": "Guest Star"
+    },
+    {
+      "start": "23:30",
+      "end": "08:00",
+      "title": "RTPi Directo"
+    }
+  ]
+}
