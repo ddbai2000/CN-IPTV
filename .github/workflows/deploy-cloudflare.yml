@@ -3,14 +3,22 @@ name: deploy to cloudflare pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: cloudflare-pages
+      url: ${{ steps.deploy.outputs.deployment-url }}
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -47,22 +55,21 @@ jobs:
       - run: pnpm m3u
 
       - name: Deploy to Cloudflare Pages
+        id: deploy
         if: env.CLOUDFLARE_API_TOKEN != ''
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           npm install -g wrangler@3
-          npx wrangler pages deploy m3u --project-name=cn-iptv --branch=main --no-bundle
+          npx wrangler pages deploy m3u \
+            --project-name=cn-iptv \
+            --branch=main \
+            --no-bundle
 
       - name: Fallback to GitHub Pages
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan gh-pages
-          git rm -rf . 2>/dev/null || true
-          cp -r m3u/* .
-          rm -rf m3u
-          git add -A
-          git commit -m "deploy: update m3u to GitHub Pages"
-          git push -f origin gh-pages || true
+        if: env.CLOUDFLARE_API_TOKEN == '' || failure()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./m3u
