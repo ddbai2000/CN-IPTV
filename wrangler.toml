@@ -1,0 +1,27 @@
+name = "cn-iptv"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "pnpm build:static"
+output_directory = "m3u"
+
+[pages]
+branch = "main"
+deployment_enabled = true
+
+[[headers]]
+for = "*.m3u8"
+[headers.values]
+Access-Control-Allow-Origin = "*"
+Cache-Control = "public, max-age=3600"
+
+[[headers]]
+for = "*.m3u"
+[headers.values]
+Access-Control-Allow-Origin = "*"
+Cache-Control = "public, max-age=3600"
+
+[[headers]]
+for = "/index.html"
+[headers.values]
+Cache-Control = "public, max-age=3600"
