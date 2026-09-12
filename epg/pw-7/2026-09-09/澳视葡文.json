@@ -1,0 +1,90 @@
+{
+  "channel": "澳视葡文",
+  "epg_data": [
+    {
+      "start": "13:20",
+      "end": "14:30",
+      "title": "Telejornal RTPi (Diferido)"
+    },
+    {
+      "start": "14:30",
+      "end": "14:55",
+      "title": "Cozinha de Chef T1"
+    },
+    {
+      "start": "14:55",
+      "end": "15:40",
+      "title": "Queridos Papás"
+    },
+    {
+      "start": "15:40",
+      "end": "15:55",
+      "title": "O Carrinho Poli T2"
+    },
+    {
+      "start": "15:55",
+      "end": "16:20",
+      "title": "Adivinha o Quanto Eu Gosto de Ti T2"
+    },
+    {
+      "start": "16:20",
+      "end": "16:45",
+      "title": "Chovem Almôndegas T1"
+    },
+    {
+      "start": "16:45",
+      "end": "17:15",
+      "title": "Maya the Bee"
+    },
+    {
+      "start": "17:15",
+      "end": "18:05",
+      "title": "Renascer (Repetição)"
+    },
+    {
+      "start": "18:05",
+      "end": "18:35",
+      "title": "Ler nas Ilhas"
+    },
+    {
+      "start": "18:35",
+      "end": "19:05",
+      "title": "Outra Histórias"
+    },
+    {
+      "start": "19:05",
+      "end": "20:00",
+      "title": "A Fazenda"
+    },
+    {
+      "start": "20:00",
+      "end": "20:45",
+      "title": "Telejornal"
+    },
+    {
+      "start": "20:45",
+      "end": "21:40",
+      "title": "Pedro Pelo Mundo T2"
+    },
+    {
+      "start": "21:40",
+      "end": "22:30",
+      "title": "Renascer"
+    },
+    {
+      "start": "22:30",
+      "end": "23:05",
+      "title": "TDM News"
+    },
+    {
+      "start": "23:05",
+      "end": "23:55",
+      "title": "Tudo É Economia"
+    },
+    {
+      "start": "23:55",
+      "end": "08:00",
+      "title": "RTPi Directo"
+    }
+  ]
+}
