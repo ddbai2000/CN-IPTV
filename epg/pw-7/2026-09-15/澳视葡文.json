@@ -1,0 +1,90 @@
+{
+  "channel": "澳视葡文",
+  "epg_data": [
+    {
+      "start": "13:20",
+      "end": "14:30",
+      "title": "Telejornal RTPi (Diferido)"
+    },
+    {
+      "start": "14:30",
+      "end": "14:55",
+      "title": "Cozinha de Chef T1"
+    },
+    {
+      "start": "14:55",
+      "end": "15:40",
+      "title": "Queridos Papás"
+    },
+    {
+      "start": "15:40",
+      "end": "15:55",
+      "title": "O Carrinho Poli T3"
+    },
+    {
+      "start": "15:55",
+      "end": "16:20",
+      "title": "Adivinha o Quanto Eu Gosto de Ti T2"
+    },
+    {
+      "start": "16:20",
+      "end": "16:45",
+      "title": "Chovem Almôndegas T1"
+    },
+    {
+      "start": "16:45",
+      "end": "17:10",
+      "title": "Maya the Bee"
+    },
+    {
+      "start": "17:10",
+      "end": "18:00",
+      "title": "Renascer (Repetição)"
+    },
+    {
+      "start": "18:00",
+      "end": "18:35",
+      "title": "Ler nas Ilhas"
+    },
+    {
+      "start": "18:35",
+      "end": "19:05",
+      "title": "Outras Histórias"
+    },
+    {
+      "start": "19:05",
+      "end": "20:00",
+      "title": "A Fazenda"
+    },
+    {
+      "start": "20:00",
+      "end": "20:50",
+      "title": "Telejornal"
+    },
+    {
+      "start": "20:50",
+      "end": "21:40",
+      "title": "TDM Desporto"
+    },
+    {
+      "start": "21:40",
+      "end": "22:35",
+      "title": "Renascer"
+    },
+    {
+      "start": "22:35",
+      "end": "23:10",
+      "title": "TDM News"
+    },
+    {
+      "start": "23:10",
+      "end": "23:30",
+      "title": "Grande Baía da Inspiração: O Estudo de um Sinólogo Francês no Sul da China"
+    },
+    {
+      "start": "23:30",
+      "end": "08:00",
+      "title": "RTPi Directo"
+    }
+  ]
+}
